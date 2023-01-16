@@ -1,0 +1,79 @@
+.wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-image: url(../bg.jpeg);
+  background-size: cover;
+  height: 100vh;
+  align-items: center;
+}
+.container {
+  z-index: 100;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  height: 250px;
+}
+
+.toDoList,
+.cardsPetsShop,
+.counter,
+.shop {
+  width: 150px;
+  height: 80px;
+  border-radius: 15px;
+  background-color: rgb(119, 116, 222, 0.3);
+  background-color: rgba(105, 178, 205, 0.2);
+
+}
+
+a {
+  padding: 80px;
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  text-align: center;
+  font-style: italic;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.neon-text {
+  color: #fff;
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 11px #0fa,
+    0 0 20px #0fa, 0 0 30px #0fa, 0 0 55px #0fa, 0 0 80px #0fa;
+}
+
+.bg {
+  z-index: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: spaceJam 120s linear infinite;
+}
+
+.background {
+  background: url("https://denis-creative.com/wp-content/uploads/2019/03/background.png");
+}
+
+.midground {
+  background: url("https://denis-creative.com/wp-content/uploads/2019/03/midground.png");
+  animation-duration: 60s;
+}
+
+.foreground {
+  background: url("https://denis-creative.com/wp-content/uploads/2019/03/foreground.png");
+  animation-duration: 30s;
+}
+
+@keyframes spaceJam {
+  100% {
+    background-position: -2500px -500px;
+  }
+}
